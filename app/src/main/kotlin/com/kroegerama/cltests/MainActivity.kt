@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         findViewById<MaterialButton>(R.id.btnWrapContent).setOnClickListener {
             start<AcWrapContentBug>()
         }
+        findViewById<MaterialButton>(R.id.btnSwipe).setOnClickListener {
+            start<AcSwipeBug>()
+        }
     }
 
     private inline fun <reified T : Activity> start() {
@@ -21,3 +24,5 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 }
 
 class AcWrapContentBug : AppCompatActivity(R.layout.wrap_content_bug)
+
+class AcSwipeBug : AppCompatActivity(R.layout.swipe_bug)

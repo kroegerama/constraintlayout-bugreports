@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AcWrapContentBug" />
+        <activity android:name=".AcSwipeBug" />
     </application>
 
 </manifest>
