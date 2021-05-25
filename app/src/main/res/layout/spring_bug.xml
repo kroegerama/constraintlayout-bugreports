@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="(Only the drag handle should react to drag movements)"
+        android:textAppearance="?textAppearanceBody1" />
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="48dp"
+        android:background="@color/purple_200"
+        app:layoutDescription="@xml/spring_bug"
+        app:motionDebug="SHOW_PROGRESS">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dragHandle"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@color/purple_700"
+            app:srcCompat="@drawable/ic_double_arrow"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</FrameLayout>

@@ -32,4 +32,11 @@
         android:layout_marginTop="24dp"
         android:text="OnSwipe bug" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSpring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Spring bug" />
+
 </LinearLayout>

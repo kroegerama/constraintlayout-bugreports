@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".AcWrapContentBug" />
         <activity android:name=".AcSwipeBug" />
+        <activity android:name=".AcSpringBug" />
     </application>
 
 </manifest>
