@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition
+        android:id="@+id/transitionStartToDragging"
+        app:constraintSetEnd="@id/stateEnd"
+        app:constraintSetStart="@id/stateStart"
+        app:duration="300"
+        app:motionInterpolator="easeOut" />
+    <ConstraintSet android:id="@+id/stateStart">
+        <Constraint
+            android:id="@+id/background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="@id/background" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/stateEnd">
+        <Constraint
+            android:id="@+id/background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="@id/background" />
+    </ConstraintSet>
+
+</MotionScene>
